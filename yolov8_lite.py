@@ -50,7 +50,7 @@ def cvtColor(image):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Process some integers.')
     # # basic params
-    parser.add_argument('--model_path', type=str, default='./models/face.rknn', help='model path, could be .pt or .rknn file')
+    parser.add_argument('--model_path', type=str, default='./yolov8n.rknn', help='model path, could be .pt or .rknn file')
     parser.add_argument('--target', type=str, default='rk3568', help='target RKNPU platform')
     parser.add_argument('--img_folder', type=str, default='./imgs', help='img folder for inference')
     parser.add_argument('--img_save', action='store_true', default=True, help='save the result')
